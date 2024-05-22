@@ -242,3 +242,108 @@ This is a great way to think about what information or procedure might be missin
 - Visualization: (Refer to data visualization) 
 
 # Module 2
+## Stages of the data life cycle 
+1. Planning
+
+Happens well before starting an analysis project. What kind of data is needed, how it'll be managed throught its lifecycle, who is going to be responsible for it, and the optimal outcomes.
+
+2. Capture
+
+This is where data is collected from a variety of different sources and brought into the organization. 
+
+3. Manage
+
+How we care for our data, how and where it's stored, the tools used to keep it safe and secure, and the actions to make sure that it's maintained properly.
+
+4. Analyze
+
+In this phase, the data is used to solve problems, make decisions and support business goals  
+
+5. Archive
+
+Storing data in a place where it's still available, but may not be used again.
+
+6. Destroy
+
+To destroy data, a company would use a secure data erasure software. If there were any paper files, they would be shredded too. This is important for protecting a company's private information, as well as private data about its customers.
+
+## Phases of data analysis
+1. Ask
+At the start of any successful data analysis, the data analyst: 
+- Takes the time to fully understand stakeholder expectations 
+- Defines the problem to be solved
+- Decides which questions to answer in order to solve the problem
+
+Qualifying stakeholder expectations means determining who the stakeholders are, what they want, when they want it, why they want it, and how best to communicate with them. Defining the problem means looking at the current state and identifying the ways in which it’s different from the ideal state. With expectations qualified and the problem defined, you can derive questions that will help achieve these goals. Define the problem that needs solving and confirm you understand expectations
+
+2. Prepare
+In the prepare phase, the emphasis is on identifying and locating data you can use to answer your questions. 
+
+3. Process
+In this phase, the aim is to refine the data. Data analysts find and eliminate any errors and inaccuracies that can get in the way of results. This usually means:
+
+- Cleaning data
+- Transforming data into a more useful format
+- Combining two or more datasets to make information more complete
+- Removing outliers (data points that could skew the information)
+
+After data analysts process data, they check the data they prepared to make sure it's complete and correct. This phase is all about getting the details right. Accordingly, the data analyst will refine strategies for verifying and sharing their data cleaning with stakeholders.
+
+4. Analyze
+With a solid foundation of well-defined questions and clean data, you’ll delve into the analyze phase. This is when you turn the data you’ve gathered, prepared, and processed into actionable information. Data analysts use many powerful tools in their work.
+
+5. Share
+This phase is exactly what it sounds like: It’s time to share what you’ve learned with your stakeholders! In this part of the program, you'll learn how data analysts interpret results and share them with others to help stakeholders make effective, data-driven decisions. In the share phase, visualization is a data analyst's best friend.
+
+6. Act
+  - This is the moment when the business takes all of the insights the data analyst has provided and puts them to work in order to solve the original business problem.
+
+## Data analyst tools
+### Spreadsheets
+Data analysts rely on spreadsheets to collect and organize data. Two popular spreadsheet applications you will probably use a lot in your future role as a data analyst are Microsoft Excel and Google Sheets. 
+
+Spreadsheets structure data in a meaningful way by letting you 
+- Collect, store, organize, and sort information
+- Identify patterns and piece the data together in a way that works for each specific data project
+- Create excellent data visualizations, like graphs and charts. 
+### Query language
+A database is a collection of structured data stored in a computer system. Some popular Structured Query Language (SQL) programs include MySQL, Microsoft SQL Server, and BigQuery.
+
+Query languages 
+- Allow analysts to isolate specific information from a database(s)
+- Make it easier for you to learn and understand the requests made to databases
+- Allow analysts to select, create, add, or download data from a database for analysis
+
+### Data visualization tools (Tableau, Looker)
+Data analysts use a number of visualization tools, like graphs, maps, tables, charts, and more. Two popular visualization tools are Tableau and Looker.
+
+These tools 
+- Turn complex numbers into a story that people can understand 
+- Help stakeholders come up with conclusions that lead to informed decisions and effective business strategies  
+- Have multiple features 
+- Tableau's simple drag-and-drop feature lets users create interactive graphs in dashboards and worksheets 
+- Looker communicates directly with a database, allowing you to connect your data right to the visual tool you choose 
+Depending on which phase of the data analysis process you’re in, you will need to use different tools. For example, if you are focusing on creating complex and eye-catching visualizations, then the visualization tools we discussed earlier are the best choice. But if you are focusing on organizing, cleaning, and analyzing data, then you will probably be choosing between spreadsheets and databases using queries. Spreadsheets and databases both offer ways to store, manage, and use data. The basic content for both tools are sets of values. Yet, there are some key differences, too:
+
+| Spreadsheets | Databases |
+|--------------|-----------|
+| Accessed through a software application | Database accessed using a query language |
+| Structured data in a row and column format | Structured data using rules and relationships |
+| Organizes information in cells | Organizes information in complex collections |
+| Provides access to a limited amount of data | Provides access to huge amounts of data |
+| Manual data entry | Strict and consistent data entry |
+| Generally one user at a time | Multiple users |
+| Controlled by the user | Controlled by a database management system |
+
+You don’t have to choose one or the other because each serves its own purpose. Generally, data analysts work with a combination of the two, as both tools are very useful in data analytics. For example, you can store data in a database, then export it to a spreadsheet for analysis. Or, if you are collecting information in a spreadsheet, and it becomes too much for that particular platform, you can import it into a database.
+
+## Terms and definitions for Course 1, Module 2
+- Database: A collection of data stored in a computer system
+- Formula: A set of instructions used to perform a calculation using the data in a spreadsheet
+- Function: A preset command that automatically performs a specified process or task using the data in a spreadsheet
+- Query: A request for data or information from a database
+- Query language: A computer programming language used to communicate with a database
+- Stakeholders: People who invest time and resources into a project and are interested in its outcome
+- Structured Query Language: A computer programming language used to communicate with a database
+- Spreadsheet: A digital worksheet
+- SQL: (Refer to Structured Query Language)
