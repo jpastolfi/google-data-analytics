@@ -347,3 +347,112 @@ You don’t have to choose one or the other because each serves its own purpose.
 - Structured Query Language: A computer programming language used to communicate with a database
 - Spreadsheet: A digital worksheet
 - SQL: (Refer to Structured Query Language)
+
+# Module 3
+# Getting started with SQL
+Just as humans use different languages to communicate with others, so do computers. Structured Query Language (or SQL, often pronounced “sequel”) enables data analysts to talk to their databases. SQL is one of the most useful data analyst tools, especially when working with large datasets in tables. It can help you investigate huge databases, track down text (referred to as strings) and numbers, and filter for the exact kind of data you need—much faster than a spreadsheet can. 
+### Query: a request for data or information from a database.
+```
+SELECT [choose the columns you want]
+
+FROM [from the appropriate table]
+
+WHERE [a certain condition is met]
+```
+This is the suggested order in which you write SQL queries. Start big (data table) and go small (specific conditions)
+## Multiple columns in a query
+Multiple columns that are chosen by the same SELECT command can be indented and grouped together.
+
+If you are requesting multiple data fields from a table, you need to include these columns in your SELECT command. Each column is separated by a comma:
+```
+SELECT
+	ColumnA,
+	ColumnB,
+	ColumnC
+FROM
+	Table where the data lives
+WHERE
+	Certain condition is met
+```
+The above query uses three commands to locate customers with the first_name, 'Tony'.
+
+1. SELECT the columns named customer_id, first_name, and last_name
+2. FROM a table named customer_name (in a dataset named customer_data)
+(The dataset name is always followed by a dot, and then the table name.)
+3. But only return the data WHERE the first_name is 'Tony'
+
+In general, it is a more efficient use of resources to select only the columns that you need. For example, it makes sense to select more columns if you will actually use the additional fields in your WHERE clause. If you have multiple conditions in your WHERE clause, they may be written like this:
+```
+SELECT
+ColumnA,
+ColumnB,
+ColumnC
+FROM
+	Table where the data lives
+WHERE
+	Condition 1
+	AND Condition 2
+	AND Condition 3
+```
+
+Notice that unlike the SELECT command that uses a comma to separate fields / variables / parameters, the WHERE command uses the AND statement to connect conditions.
+
+## Capitalization, indentation, and semicolons
+You can write your SQL queries in all lowercase and don’t have to worry about extra spaces between words. However, using capitalization and indentation can help you read the information more easily. Keep your queries neat, and they will be easier to review or troubleshoot if you need to check them later on.
+
+The semicolon is a statement terminator and is part of the American National Standards Institute (ANSI) SQL-92 standard, which is a recommended common syntax for adoption by all SQL databases. However, not all SQL databases have adopted or enforce the semicolon, so it’s possible you may come across some SQL statements that aren’t terminated with a semicolon. If a statement works without a semicolon, it’s fine.
+
+## WHERE conditions
+The WHERE clause narrows your query so that the database returns only the data with an exact value match or the data that matches a certain condition that you want to satisfy. For example, if you are looking for a specific customer with the last name Chavez, the WHERE clause would be `WHERE field1 = 'Chavez'`. However, if you are looking for all customers with a last name that begins with the letters “Ch," the WHERE clause would be `WHERE field1 LIKE 'Ch%'`
+
+You can conclude that the LIKE clause is very powerful because it allows you to tell the database to look for a certain pattern! The percent sign % is used as a wildcard to match one or more characters. In the example above, both Chavez and Chen would be returned. Note that in some databases an asterisk * is used as the wildcard instead of a percent sign %.
+
+## SELECT all columns
+In the example, if you replace SELECT field1 with SELECT * , you would be selecting all of the columns in the table instead of the field1 column only. From a syntax point of view, it is a correct SQL statement, but you should use the asterisk * sparingly and with caution.  Depending on how many columns a table has, you could be selecting a tremendous amount of data. Selecting too much data can cause a query to run slowly.
+
+## Comments
+Some tables aren’t designed with descriptive enough naming conventions. In the example, field1 was the column for a customer’s last name, but you wouldn’t know it by the name. A better name would have been something such as last_name. In these cases, you can place comments alongside your SQL to help you remember what the name represents. Comments are text placed between certain characters, /* and */, or after two dashes --) as shown below. 
+```
+SELECT
+	field1 /* this is the last name column */
+FROM
+	table -- this is the customer data table  
+WHERE
+	field1 LIKE 'Ch%';
+```
+Comments can also be added outside of a statement as well as within a statement. You can use this flexibility to provide an overall description of what you are going to do, step-by-step notes about how you achieve it, and why you set different parameters/conditions. 
+```
+-- This is an important query used later to join with the accounts table 
+SELECT
+ 		rowkey,  -- key used to join with account_id
+Info.date,  -- date is in string format YYYY-MM-DD HH:MM:SS
+Info.code  -- e.g., 'pub-###'
+
+FROM  Publishers
+```
+The more comfortable you get with SQL, the easier it will be to read and understand queries at a glance. Still, it never hurts to have comments in a query to remind yourself of what you’re trying to do. This also makes it easier for others to understand your query if your query is shared. As your queries become more and more complex, this practice will save you a lot of time and energy to understand complex queries you wrote months or years ago.
+
+## Aliases
+You can also make it easier on yourself by assigning a new name or alias to the column or table names to make them easier to work with (and avoid the need for comments). This is done with a SQL AS clause. In the example below, aliases are used for both a table name and a column. Within the database, the table is called actual_table_name and the column in that table is called actual_column_name. They are aliased as my_table_alias and my_column_alias, respectively. These aliases are good for the duration of the query only. An alias doesn’t change the actual name of a column or table in the database.
+
+````
+SELECT 
+	my_table_alias.actual_column_name AS my_column_alias
+FROM
+	actual_table_name AS my_table_alias
+````
+
+Suppose you want to flag all employees in all departments with lower salaries for your manager. Because interns are also included in the table and they have salaries less than $30,000, you want to make sure your results give you only the full time employees with salaries that are $30,000 or less. In other words, you want to exclude interns with the 'INT' job code who also earn less than $30,000. The AND clause enables you to test for both conditions. You create a SQL query similar to below, where <> means "does not equal":
+```
+SELECT
+	*
+FROM
+	Employee
+WHERE
+	jobCode <> 'INT' 
+      AND salary <= 30000;
+```
+
+## Terms and definitions for Course 1, Module 3
+- Attribute: A characteristic or quality of data used to label a column in a table
+- Observation: The attributes that describe a piece of data contained in a row of a table
