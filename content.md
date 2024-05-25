@@ -456,3 +456,109 @@ WHERE
 ## Terms and definitions for Course 1, Module 3
 - Attribute: A characteristic or quality of data used to label a column in a table
 - Observation: The attributes that describe a piece of data contained in a row of a table
+
+# Module 4
+# Data and fairness
+Fairness means ensuring that your analysis doesn't create or reinforce bias. In other words, as a data analyst, you want to help create systems that are fair and inclusive to everyone.
+
+Part of a data professional’s responsibility is to make certain that their analysis is fair. Fairness means ensuring your analysis doesn't create or reinforce bias. This can be challenging, but if the analysis is not objective, the conclusions can be misleading and even harmful. Data can be true but unfair at the same time. For example, if 90% of a company's employees are men, the sampling won't be diverse.
+
+| Best practice | Explanation | Example |
+|---------------|-------------|---------|
+| Consider all of the available data | Part of your job as a data analyst is to determine what data is going to be useful for your analysis. Often there will be data that isn’t relevant to what you’re focusing on or doesn’t seem to align with your expectations. But you can’t just ignore it; it’s critical to consider all of the available data so that your analysis reflects the truth and not just your own expectations. | A state’s Department of Transportation is interested in measuring traffic patterns on holidays. At first, they only include metrics related to traffic volumes and the fact that the days are holidays. But the data team realizes they failed to consider how weather on these holidays might also affect traffic volumes. Considering this additional data helps them gain more complete insights. |
+| Identify surrounding factors | As you’ll learn throughout these courses, context is key for you and your stakeholders to understand the final conclusions of any analysis. Similar to considering all of the data, you also must understand surrounding factors that could influence the insights you’re gaining. | A human resources department wants to better plan for employee vacation time in order to anticipate staffing needs. HR uses a list of national bank holidays as a key part of the data-gathering process. But they fail to consider important holidays that aren’t on the bank calendar, which introduces bias against employees who celebrate them. It also gives HR less useful results because bank holidays may not necessarily apply to their actual employee population. |
+| Include self-reported data | Self-reporting is a data collection technique where participants provide information about themselves. Self-reported data can be a great way to introduce fairness in your data collection process. People bring conscious and unconscious bias to their observations about the world, including about other people. Using self-reporting methods to collect data can help avoid these observer biases. Additionally, separating self-reported data from other data you collect provides important context to your conclusions! | A data analyst is working on a project for a brick-and-mortar retailer. Their goal is to learn more about their customer base. This data analyst knows they need to consider fairness when they collect data; they decide to create a survey so that customers can self-report information about themselves. By doing that, they avoid bias that might be introduced with other demographic data collection methods. For example, if they had sales associates report their observations about customers, they might introduce any unconscious bias the employees had to the data. | 
+| Use oversampling effectively | When collecting data about a population, it’s important to be aware of the actual makeup of that population. Sometimes, oversampling can help you represent groups in that population that otherwise wouldn’t be represented fairly. Oversampling is the process of increasing the sample size of nondominant groups in a population. This can help you better represent them and address imbalanced datasets. | A fitness company is releasing new digital content for users of their equipment. They are interested in designing content that appeals to different users, knowing that different people may interact with their equipment in different ways. For example, part of their user-base is age 70 or older. In order to represent these users, they oversample them in their data. That way, decisions they make about their fitness content will be more inclusive.
+| Think about fairness from beginning to end | To ensure that your analysis and final conclusions are fair, be sure to consider fairness from the earliest stages of a project to when you act on the data insights. This means that data collection, cleaning, processing, and analysis are all performed with fairness in mind. | A data team kicks off a project by including fairness measures in their data-collection process. These measures include oversampling their population and using self-reported data. However, they fail to inform stakeholders about these measures during the presentation. As a result, stakeholders leave with skewed understandings of the data. Learning from this experience, they add key information about fairness considerations to future stakeholder presentations.
+
+## Case studies
+
+1. Teaching workshop
+
+To improve the effectiveness of its teaching staff, the administration of a high school offered the opportunity for all teachers to participate in a workshop. They were not required to attend; instead, the administration encouraged teachers to sign up. Of the 43 teachers on staff, 19 chose to take the workshop.
+
+At the end of the academic year, the administration collected data on teacher performance for all teachers on staff. The data was collected via student survey. In the survey, students were asked to rank each teacher's effectiveness on a scale of 1 (very poor) to 6 (very good). 
+
+The administration compared data on teachers who attended the workshop to data on teachers who did not. The comparison revealed that teachers who attended the workshop had an average score of 4.95, while teachers who did not attend had an average score of 4.22. The administration concluded that the workshop was a success.
+
+- My answer:
+
+Since the workshop was optional, the teachers who attended it are likely more engaged in being better teachers and provide a better teaching experience. Given that, there's a possibility that they were already better evaluated than the other teachers, meaning that the higher evaluation that they received wasn't related to the workshop at all. We can't say that the workshop was a success without a previous evaluation from the teachers to see if their evaluation actually improved or not.
+
+Also, the school could have used self-reporting to include more data from the teachers. They could also have made a survey before the workshop to compare the ratings that the teachers received before and after taking the workshop to know if it actually made a difference in their teaching.
+
+- Google's answer:
+
+Great work reinforcing your learning with a thoughtful self-reflection! In your response, you likely noted that this is an example of unfair practice. It is tempting to conclude—as the administration did—that the workshop was a success. However, since the workshop was voluntary and not random, it is not appropriate to infer a causal relationship between attending the workshop and the higher rating.
+
+The workshop might have been effective, but other explanations for the differences in the ratings cannot be ruled out. For example, another explanation could be that the staff volunteering for the workshop were the better, more motivated teachers. This group of teachers would be rated higher whether or not the workshop was effective.
+
+It’s also notable that there is no direct connection between student survey responses and workshop attendance. The data analyst could correct this by asking for the teachers to be selected randomly to participate in the workshop. They could also collect data that measures something more directly related to workshop attendance, such as the success of a technique the teachers learned in that workshop.
+
+2. Self-driving prototype
+
+An automotive company tests the driving capabilities of its self-driving car prototype. They carry out the tests on various types of roadways—specifically, a race track, trail track, and dirt road.
+
+The researchers only test the prototype during the daytime. They collect two types of data: sensor data from the car during the drives and video data of the drives from cameras on the car.
+
+They review the data after the initial tests. The results illustrate that the new self-driving car meets the performance standards across each of the roadways. As a result, the car can progress to the next phase of testing, which will include driving in various weather conditions. 
+
+- My answer:
+
+The tests have not been carried out during night time, which is a grave mistake. What if the car has a hard time recognizing black people during the night? The text also doesn't specify if tests have been carried out with human interaction, which can be erratic and unpredictable.
+
+The unfair practices can be corrected by running night time tests and in uncontrolled environments.
+
+- Google's answer:
+
+Once again, this case study shows an unfair practice. Your response probably mentioned that, although the researchers test the prototype on three different tracks, they only conduct tests during the day.
+
+Conditions on each track may be very different during the day and night and this could change the results significantly. The data analyst should correct this by asking the test team to add in nighttime testing to get a full perspective of how the prototype performs at any time of the day on the tracks.
+
+3. Amusement park
+
+An amusement park plans to add new rides to their property. First, they need to determine what kinds of new rides visitors want the park to build. In order to understand their visitors’ interests, the park develops a survey. 
+
+They decide to distribute the survey near the roller coasters because the lines are long enough that visitors will have time to answer all of the questions. After collecting this survey data, they find that most of the respondents want more roller coasters at the park. They conclude that they should add more roller coasters, as most of their visitors prefer them.
+
+- My answer:
+
+Putting up the surveys in the roller coaster line clearly is a selection bias, since the ones who are there are the ones who enjoy roller coasters to the point of waiting in line to ride it.
+
+This could be corrected by oversampling the surveys carried out in the other rides of the park or uniting the surveys in an neutral place, such as the exit of the amusement park.
+
+- Google's answer:
+
+A thoughtful reflection would have included information about the decision to distribute surveys in places where visitors would have time to respond. Otherwise, it accidentally introduces sampling bias.
+
+The only respondents to the survey are people waiting in line for the roller coasters. This may unfairly bias survey results, because respondents might prefer roller coasters. A data analyst could reduce sampling bias by distributing the survey at the entrance and exit of the amusement park. This would avoid targeting roller coaster fans and provide results from the park’s general audience.
+
+## Decoding the job description
+The data analyst role is one of many job titles that contain the word “analyst.” To name a few others that sound similar but may not be the same role:
+- Business analyst: analyzes data to help businesses improve processes, products, or services
+- Data analytics consultant: analyzes the systems and models for using data
+- Data engineer: prepares and integrates data from different sources for analytical use
+- Data scientist: uses expert skills in technology and social science to find trends through data analysis
+- Data specialist: organizes or converts data for use in databases or software systems
+- Operations analyst: analyzes data to assess the performance of business operations and workflows
+
+Data analysts, data scientists, and data specialists sound very similar but focus on different tasks. As you start to browse job listings online, you might notice that companies’ job descriptions seem to combine these roles or look for candidates who may have overlapping skills. The fact that companies often blur the lines between them means that you should take special care when reading the job descriptions and the skills required. 
+
+![alt text](image.png)
+
+## Job specializations by industry 
+We learned that the data specialist role concentrates on in-depth knowledge of databases. In similar fashion, other specialist roles for data analysts can focus on in-depth knowledge of specific industries. For example, in a job as a business analyst you might wear some different hats than in a more general position as a data analyst. As a business analyst, you would likely collaborate with managers, share your data findings, and maybe explain how a small change in the company’s project management system could save the company 3% each quarter. Although you would still be working with data all the time, you would focus on using the data to improve business operations, efficiencies, or the bottom line.
+
+Other industry-specific specialist positions that you might come across in your data analyst job search include:
+
+Marketing analyst: analyzes market conditions to assess the potential sales of products and services 
+HR/payroll analyst: analyzes payroll data for inefficiencies and errors
+Financial analyst: analyzes financial status by collecting, monitoring, and reviewing data
+Risk analyst: analyzes financial documents, economic conditions, and client data to help companies determine the level of risk involved in making a particular business decision
+Healthcare analyst: analyzes medical data to improve the business aspect of hospitals and medical facilities
+
+## Terms and definitions for Course 1, Module 4
+- Business task: The question or problem data analysis resolves for a business
+- Fairness: A quality of data analysis that does not create or reinforce bias 
+- Oversampling: The process of increasing the sample size of nondominant groups in a population. This can help you better represent them and address imbalanced datasets  
+- Self-reporting: A data collection technique where participants provide information about themselves
