@@ -7,17 +7,17 @@ The collection, transformation, and organization of data in order to draw conclu
 Someone who collects, transforms, and organizes data in order to help make informed decisions.
 
 # The six steps of the data analysis process
-## Ask
+## Ask (understand the question to be  answered)
 In the ask phase, you’ll work to understand the challenge to be solved or the question to be  answered. It will likely be assigned to you by stakeholders. As this is the ask phase, you’ll ask many questions to help you along the way. 
-## Prepare
+## Prepare (find and collect data. Gather data and verify that it is accurate and useful)
 Next, in the prepare phase, you’ll find and collect the data you'll need to answer your questions. You’ll identify data sources, gather data, and verify that it is accurate and useful for answering your questions. 
-## Process
+## Process (clean and organize data. Remove inconsistencies)
 The process phase is when you will clean and organize your data. Tasks you perform here include removing any inconsistencies; filling in missing values; and, in many cases, changing the data to a format that's easier to work with. Essentially, you’re ensuring the data is ready before you begin analysis.
-## Analyze
+## Analyze (data analysis to uncover answers and solutions. Examine trends and patterns)
 The analyze phase is when you do the necessary data analysis to uncover answers and solutions. Depending on the situation and the data, this could involve tasks such as calculating averages or counting items in categories so you can examine trends and patterns.
-## Share
+## Share (present findings through a report, presentation, or data visualizations)
 Next comes the share phase, when you present your findings to decision-makers through a report, presentation, or data visualizations. As part of the share phase, you decide which medium you want to use to share your findings and select the data to include. Tools for presenting data visually include charts made in Google Sheets, Tableau, and R. 
-## Act
+## Act (put the data insights into action)
 Last is the act phase, in which you and others in the company put the data insights into action. This could mean implementing a new business strategy, making changes to a website, or any other action that solves the initial problem. 
 
 # Example 1
@@ -212,7 +212,7 @@ Being able to identify a correlation between two or more pieces of data. A corre
 This means being able to see the big picture as well as the details. A jigsaw puzzle is a great way to think about this. Big-picture thinking is like looking at a complete puzzle. You can enjoy the whole picture without getting stuck on every tiny piece that went into making it. If you only focus on individual pieces, you wouldn't be able to see past that, which is why big-picture thinking is so important. It helps you zoom out and see possibilities and opportunities. This leads to exciting new ideas or innovations. On the flip side, detail-oriented thinking is all about figuring out all of the aspects that will help you execute a plan. In other words, the pieces that make up your puzzle. There are all kinds of problems in the business world that can benefit from employees who have both a big-picture and a detail-oriented way of thinking. Most of us are naturally better at one or the other. But you can always develop the skills to fit both pieces together.
 
 # Questions data analysts ask when they're on the hunt for a solution.
-## What is the root cause of a problem?
+## What is the root cause of a problem?x
 A root cause is the reason why a problem occurs. If we can identify and get rid of a root cause, we can prevent that problem from happening again. A simple way to wrap your head around root causes is with the process called the Five Whys. In the Five Whys you ask "why" five times to reveal the root cause. The fifth and final answer should give you some useful and sometimes surprising insights. Here's an example of the Five Whys in action. Let's say you wanted to make a blueberry pie but couldn't find any blueberries. You've been trying to solve a problem by asking, why can't I make a blueberry pie? The answer will be, there are no blueberries at the store. There's Why Number 1. You then ask, why were there no blueberries at the store? Then you discover that the blueberry bushes don't have enough fruit this season. That's Why Number 2. Next, you'd ask, why was there not enough fruit? This would lead to the fact that birds were eating all the berries. Why Number 3, asked and answered. Now we get to Why Number 4. Ask why a fourth time and the answer would be that, although the birds normally prefer mulberries and don't eat blueberries, the mulberry bush didn't produce fruit this season, so the birds are eating blueberries instead. Finally, we get to Why Number 5, which should reveal the root cause. A late frost damaged the mulberry bushes, so it didn't produce any fruit. You can't make a blueberry pie because of the late frost months ago. See how the Five Whys can reveal some very surprising root causes. This is a great trick to know, and it can be a very helpful process in data analysis. 
 
 ## Where are the gaps in our process?
