@@ -1,4 +1,6 @@
-# Module 1
+# Course 01 - Foundations: data, data everywhere
+
+# Module 1: 
 
 ## Data analysis
 The collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision-making.
