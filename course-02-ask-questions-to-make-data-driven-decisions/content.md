@@ -311,4 +311,167 @@ Some data analysts also consider a fourth V: veracity. Veracity refers to the qu
 - Small data:Small,specific data points typically involving a short period of time,which are useful for making day-to-day decisions
 
 # Module 3: Spreadsheet magic
+## Spreadsheets and the data life cycle
+To better understand the benefits of using spreadsheets in data analytics, let’s explore how they relate to each phase of the data life cycle:
+- <b>Plan</b> for the users who will work within a spreadsheet by developing organizational standards. This can mean formatting your cells, the headings you choose to highlight, the color scheme, and the way you order your data points. When you take the time to set these standards, you will improve communication, ensure consistency, and help people be more efficient with their time.
+- <b>Capture</b> data by the source by connecting spreadsheets to other data sources, such as an online survey application or a database. This data will automatically be updated in the spreadsheet. That way, the information is always as current and accurate as possible.
+- <b>Manage</b> different kinds of data with a spreadsheet. This can involve storing, organizing, filtering, and updating information. Spreadsheets also let you decide who can access the data, how the information is shared, and how to keep your data safe and secure. 
+- <b>Analyze</b> data in a spreadsheet to help make better decisions. Some of the most common spreadsheet analysis tools include formulas to aggregate data or create reports, and pivot tables for clear, easy-to-understand visuals. 
+- <b>Archive</b> any spreadsheet that you don’t use often, but might need to reference later with built-in tools. This is especially useful if you want to store historical data before it gets updated. 
+- <b>Destroy</b> your spreadsheet when you are certain that you will never need it again, if you have better backup copies, or for legal or security reasons. Keep in mind, lots of businesses are required to follow certain rules or have measures in place to make sure data is destroyed properly.	
+
+### Absolute referencing
+- Absolute referencing is marked by a dollar sign ($). For example, =$A$10 has absolute referencing for both the column and the row value
+
+- Relative references (which is what you normally do, e.g. “=A10”) will change anytime the formula is copied and pasted. They are in relation to where the referenced cell is located. For example if you copied “=A10” to the cell to the right it would become “=B10”. With absolute referencing “=$A$10” copied to the cell to the right would remain “=$A$10”. But if you copied $A10 to the cell below, it would change to $A11 because the row value isn't an absolute reference.
+
+- Absolute references will not change when you copy and paste the formula in a different cell. The cell being referenced is always the same.
+
+- To easily switch between absolute and relative referencing in the formula bar, highlight the reference you want to change and press the F4 key; for example, if you want to change the absolute reference, $A$10, in your formula to a relative reference, A10, highlight $A$10 in the formula bar and then press the F4 key to make the change. 
+
+- In a lot of spreadsheet applications, you can press the F2 (or Enter) key to highlight the range of data in the spreadsheet that is referenced in a formula. Click the cell with the formula, and then press the F2 (or Enter) key to highlight the data in your spreadsheet. 
+
+## Combining with functions
+COUNTIF() is a formula and a function. This means the function runs based on criteria set by the formula. In this case, COUNT is the formula; it will be executed IF the conditions you create are true. For example, you could use =COUNTIF(A1:A16, “7”) to count only the cells that contained the number 7. Combining formulas and functions allows you to do more work with a single command. 
+
+IFERROR(formula, message): returns the message if the formula returns an error
+
+DATEDIF(start, end, format): Returns the difference between two dates in a requested format (M, D, Y)
+
+## Save time with structured thinking
+### Structured thinking
+The process of recognizing the current problem or situation, organizing available information, revealing gaps and opportunities, and identifying the options. In other words, it's a way of being super prepared. It's having a clear list of what you are expected to deliver, a timeline for major tasks and activities, and checkpoints so the team knows you're making progress. 
+
+Structured thinking will help you understand problems at a high level so that you can identify areas that need deeper investigation and understanding. The starting place for structured thinking is the problem domain. Once you know the specific area of analysis, you can set your base and lay out all your requirements and hypotheses before you start investigating. With a solid base in place, you'll be ready to deal with any obstacles that come up.
+
+Another way that you can practice structured thinking and avoid mistakes is by using a scope of work. A scope of work or SOW is an agreed- upon outline of the work you're going to perform on a project. For many businesses, this includes things like work details, schedules, and reports that the client can expect. Now, as a data analyst, your scope of work will be a bit more technical and include those basic items we just mentioned, but you'll also focus on things like data preparation, validation, analysis of quantitative and qualitative datasets, initial results, and maybe even some visuals to really get the point across. 
+
+Let's bring a scope of work to life with a simple example. Say a couple has hired a wedding planner. We'll focus on just one task, the wedding invitations. Here's what might be in scope of work: deliverables, timeline, milestones, and reports. Let's break down just one of these, deliverables. The wedding planner and couple will need to decide on the invitation, make a list of people to invite, collect their addresses, print the invitations, address the envelopes, stamp them, and mail them out. Now let's check out the timelines. You'll notice the dates and the milestones which keep us on track. Finally, we have the reports, which give our couple some peace of mind by telling them when each step is complete.
+
+### Creating a scope of work
+Preparing to write an SOW is about asking questions to learn the necessary information about the project, but it’s also about clarifying and defining what you’re being asked to accomplish, and what the limits or boundaries of the “ask” are. 
+
+There’s no standard format for an SOW. They may differ significantly from one organization to another, or from project to project. However, they all have a few foundational pieces of content in common:
+
+Deliverables: 
+- <strong>Deliverables: </strong> Items or tasks you will complete before you can finish the project. What work is being done, and what things are being created as a result of this project? When the project is complete, what are you expected to deliver to the stakeholders? Be specific here. Will you collect data for this project? How much, or for how long? 
+
+Avoid vague statements. For example, “fixing traffic problems” doesn’t specify the scope. This could mean anything from filling in a few potholes to building a new overpass. Be specific! Use numbers and aim for hard, measurable goals and objectives. For example: “Identify top 10 issues with traffic patterns within the city limits, and identify the top 3 solutions that are most cost-effective for reducing traffic congestion.”
+
+- <strong>Milestones: </strong> significant tasks you will confirm along your timeline to help everyone know the project is on track. This is closely related to your timeline. What are the major milestones for progress in your project? How do you know when a given part of the project is considered complete?
+
+Milestones can be identified by you, by stakeholders, or by other team members such as the Project Manager. Smaller examples might include incremental steps in a larger project like “Collect and process 50% of required data (100 survey responses)”, but may also be larger examples like ”complete initial data analysis report” or “deliver completed dashboard visualizations and analysis reports to stakeholders”. 
+
+- <strong>Timelines: </strong> include due dates for when deliverables, milestones, and/or reports are due.
+
+Your timeline will be closely tied to the milestones you create for your project. The timeline is a way of mapping expectations for how long each step of the process should take. The timeline should be specific enough to help all involved decide if a project is on schedule. When will the deliverables be completed? How long do you expect the project will take to complete? If all goes as planned, how long do you expect each component of the project will take? When can we expect to reach each milestone?
+
+- <strong>Reports: </strong> notify everyone as you finalize deliverables and meet milestones.
+
+Good SOWs also set boundaries for how and when you’ll give status updates to stakeholders. How will you communicate progress with stakeholders and sponsors, and how often? Will progress be reported weekly? Monthly? When milestones are completed? What information will status reports contain?
+
+At a minimum, any SOW should answer all the relevant questions in the above areas. Note that these areas may differ depending on the project. But at their core, the SOW document should always serve the same purpose by containing information that is specific, relevant, and accurate. If something changes in the project, your SOW should reflect those changes.
+
+SOWs should also contain information specific to what is and isn’t considered part of the project. The scope of your project is everything that you are expected to complete or accomplish, defined to a level of detail that doesn’t leave any ambiguity or confusion about whether a given task or item is part of the project or not. 
+
+Notice how the previous example about studying traffic congestion defined its scope as the area within the city limits. This doesn’t leave any room for confusion — stakeholders need only to refer to a map to tell if a stretch of road or intersection is part of the project or not.  Defining requirements can be trickier than it sounds, so it’s important to be as specific as possible in these documents, and to use quantitative statements whenever possible. 
+
+For example, assume that you’re assigned to a project that involves studying the environmental effects of climate change on the coastline of a city: How do you define what parts of the coastline you are responsible for studying, and which parts you are not?
+
+In this case, it would be important to define the area you’re expected to study using GPS locations, or landmarks. Using specific, quantifiable statements will help ensure that everyone has a clear understanding of what’s expected. 
+
+### Contextualizing data
+- Context: the condition in which something exists or happens
+
+Context in data analytics is the condition and circumstances that surround and give meaning to the data. Context is important in data analytics because it helps make disorganized data accessible and understood. The fact is, data has little value if it is not paired with context. 
+
+Context can turn raw data into meaningful information. It is very important for data analysts to contextualize their data. This means giving the data perspective by defining it. To do this, you need to identify:
+
+- Who: The person or organization that created, collected, and/or funded the data collection
+- What: The things in the world that data could have an impact on
+- Where: The origin of the data
+- When: The time when the data was created or collected
+- Why: The motivation behind the creation or collection
+- How: The method used to create or collect it
+
+## Glossary terms from module 3
+- AVERAGE: A spreadsheet function that returns an average of the values from a selected range 
+- Borders: Lines that can be added around two or more cells on a spreadsheet
+- Cell reference: A cell or a range of cells in a worksheet typically used in formulas and functions
+- COUNT: A spreadsheet function that counts the number of cells in a range that meet a specific criteria
+- Equation: A calculation that involves addition, subtraction, multiplication, or division (also called a math expression)
+- Fill handle: A box in the lower-right-hand corner of a selected spreadsheet cell that can be dragged through neighboring cells in order to continue an instruction
+- Filtering: The process of showing only the data that meets a specified criteria while hiding the rest
+- Header: The first row in a spreadsheet that labels the type of data in each column
+- Math expression: A calculation that involves addition, subtraction, multiplication, or division (also called an equation)
+- Math function: A function that is used as part of a mathematical formula
+- MAX: A spreadsheet function that returns the largest numeric value from a range of cells
+- MIN: A spreadsheet function that returns the smallest numeric value from a range of cells
+- Open data: Data that is available to the public
+- Operator: A symbol that names the operation or calculation to be performed
+- Order of operations: Using parentheses to group together spreadsheet values in order to clarify the order in which operations should be performed
+- Problem domain: The area of analysis that encompasses every activity affecting or affected by a problem
+- Range: A collection of two or more cells in a spreadsheet
+- Report: A static collection of data periodically given to stakeholders 
+- Return on investment (ROI): A formula that uses the metrics of investment and profit to evaluate the success of an investment
+- Revenue: The total amount of income generated by the sale of goods or services 
+- Scope of work (SOW): An agreed-upon outline of the tasks to be performed during a project
+- Sorting: The process of arranging data into a meaningful order to make it easier to understand, analyze, and visualize
+- SUM: A spreadsheet function that adds the values of a selected range of cells
+
 # Module 4: Always remember the stakeholder
+Stakeholders: people that have invested time, interest, and resources into the projects that you'll be working on as a data analyst. In other words, they hold stakes in what you're doing. 
+
+## Working with stakeholders
+Your data analysis project should answer the business task and create opportunities for data-driven decision-making. That's why it is so important to focus on project stakeholders. As a data analyst, it is your responsibility to understand and manage your stakeholders’ expectations while keeping the project goals front and center.
+
+Your project stakeholders may change from project to project, but there are three common stakeholder groups that you might find yourself working with: the executive team, the customer-facing team, and the data science team.
+
+- Executive team: The executive team provides strategic and operational leadership to the company. They set goals, develop strategy, and make sure that strategy is executed effectively. The executive team might include vice presidents, the chief marketing officer, and senior-level professionals who help plan and direct the company’s work. These stakeholders think about decisions at a very high level and they are looking for the headline news about your project first.  They are less interested in the details. 
+
+- Customer-facing team: The customer-facing team includes anyone in an organization who has some level of interaction with customers and potential customers. Typically they compile information, set expectations, and communicate customer feedback to other parts of the internal organization. These stakeholders have their own objectives and may come to you with specific asks. It is important to let the data tell the story and not be swayed by asks from your stakeholders to find certain patterns that might not exist. 
+
+- Data science team: Organizing data within a company takes teamwork. There's a good chance you'll find yourself working with other data analysts, data scientists, and data engineers. For example, maybe you team up with a company's data science team to work on boosting company engagement to lower rates of employee turnover. In that case, you might look into the data on employee productivity, while another analyst looks at hiring data. Then you share those findings with the data scientist on your team, who uses them to predict how new processes could boost employee productivity and engagement. When you share what you found in your individual analyses, you uncover the bigger story. A big part of your job will be collaborating with other data team members to find new angles of the data to explore.
+
+## Working effectively with stakeholders
+When you're working with each group of stakeholders- from the executive team, to the customer-facing team, to the data science team, you'll often have to go beyond the data. Use the following tips to communicate clearly, establish trust, and deliver your findings across groups.
+
+- Discuss goals. Stakeholder requests are often tied to a bigger project or goal. When they ask you for something, take the opportunity to learn more. Start a discussion. Ask about the kind of results the stakeholder wants. Sometimes, a quick chat about goals can help set expectations and plan the next steps.
+
+- Feel empowered to say “no.” Let’s say you are approached by a marketing director who has a “high-priority” project and needs data to back up their hypothesis. They ask you to produce the analysis and charts for a presentation by tomorrow morning. Maybe you realize their hypothesis isn’t fully formed and you have helpful ideas about a better way to approach the analysis. Or maybe you realize it will take more time and effort to perform the analysis than estimated. Whatever the case may be, don’t be afraid to push back when you need to. 
+
+## Use multiple communication strategies to reach your audience
+Being able to communicate in multiple formats is a key skill for data analysts. Listening, speaking, presenting, and writing skills will help you succeed in your projects and in your career. Here's an important first tip: Know your audience! When you communicate your analysis and recommendations as a data analyst, it's vital to keep your audience in mind. 
+
+Be sure to answer these four important questions related to your audience:
+
+- Who is your audience? 
+- What do they already know? 
+- What do they need to know? 
+- How can you best communicate what they need to know? 
+
+## Limitations of data
+### The case of incomplete (or nonexistent!) data
+If you have incomplete or nonexistent data, you might realize during an analysis that you don't have enough data to reach a conclusion. Or, you might even be solving a different problem altogether! For example, suppose you are looking for employees who earned a particular certificate but discover that certification records go back only two years at your company. You can still use the data, but you will need to make the limits of your analysis clear. You might be able to find an alternate source of the data by contacting the company that led the training. But to be safe, you should be up front about the incomplete dataset until that data becomes available.
+
+### Don't miss misaligned data
+If you're collecting data from other teams and using existing spreadsheets, it is good to keep in mind that people use different business rules. So one team might define and measure things in a completely different way than another. For example, if a metric is the total number of trainees in a certificate program, you could have one team that counts every person who registered for the training, and another team that counts only the people who completed the program. In cases like these, establishing how to measure things early on standardizes the data across the board for greater reliability and accuracy. This will make sure comparisons between teams are meaningful and insightful.
+
+### Deal with dirty data
+Dirty data refers to data that contains errors. Dirty data can lead to productivity loss, unnecessary spending, and unwise decision-making. A good data cleaning effort can help you avoid this. As a quick reminder, data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset. When you find and fix the errors - while tracking the changes you made - you can avoid a data disaster. 
+
+### Tell a clear story
+- Compare the same types of data: Data can get mixed up when you chart it for visualization. Be sure to compare the same types of data and double check that any segments in your chart definitely display different metrics. 
+- Visualize with care: A 0.01% drop in a score can look huge if you zoom in close enough. To make sure your audience sees the full story clearly, it is a good idea to set your Y-axis to 0.
+- Leave out needless graphs: If a table can show your story at a glance, stick with the table instead of a pie chart or a graph. Your busy audience will appreciate the clarity.
+- Test for statistical significance: Sometimes two datasets will look different, but you will need a way to test whether the difference is real and important. So remember to run statistical tests to see how much confidence you can place in that difference.
+- Pay attention to sample size: Gather lots of data. If a sample size is small, a few unusual responses can skew the results. If you find that you have too little data, be careful about using it to form judgments. Look for opportunities to collect more data, then chart those trends over longer periods.
+
+### Be the judge
+In any organization, a big part of a data analyst’s role is making sound judgments. When you know the limitations of your data, you can make judgment calls that help people make better decisions supported by the data. Data is an extremely powerful tool for decision-making, but if it is incomplete, misaligned, or hasn’t been cleaned, then it can be misleading. Take the necessary steps to make sure that your data is complete and consistent. Clean the data before you begin your analysis to save yourself and possibly others a great amount of time and effort.
+
+Free data sources: 
+- World Bank 
+- World Health Organization
+- Google Public Data Explorer
+- U.S. Census Bureau
