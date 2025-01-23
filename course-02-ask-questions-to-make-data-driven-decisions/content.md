@@ -470,6 +470,61 @@ Dirty data refers to data that contains errors. Dirty data can lead to productiv
 ### Be the judge
 In any organization, a big part of a data analyst’s role is making sound judgments. When you know the limitations of your data, you can make judgment calls that help people make better decisions supported by the data. Data is an extremely powerful tool for decision-making, but if it is incomplete, misaligned, or hasn’t been cleaned, then it can be misleading. Take the necessary steps to make sure that your data is complete and consistent. Clean the data before you begin your analysis to save yourself and possibly others a great amount of time and effort.
 
+
+## Meetings best practices
+Whether you're leading a meeting or just attending it, there are best practices you can follow to make sure your meetings are a success.
+- Come prepared, be on time, pay attention, and ask questions.
+    
+This applies to both meetings you lead and ones you attend. Bring what you need. If you like to take notes, have your notebook and pens in your bag or your work device on hand. Being prepared also means you should read the meeting agenda ahead of time and be ready to provide any updates on your work. If you're leading the meeting, make sure to prepare your notes and presentations and know what you're going to talk about and of course, be ready to answer questions.  If you're leading the meeting, make sure to prepare your notes and presentations and know what you're going to talk about and of course, be ready to answer questions. 
+
+These are some other tips that I like to follow when I'm leading a meeting. First, every meeting should focus on making a clear decision and include the person needed to make that decision. And if there needs to be a meeting in order to make a decision, schedule it immediately. Don't let progress stall by waiting until next week's meeting. Lastly, try to keep the number of people at your meeting under 10 if possible. More people makes it hard to have a collaborative discussion. It's also important to respect your team members' time. The best way to do this is to come to meetings on time. If you're leading the meeting, show up early and set up beforehand so you're ready to start when people arrive. You can do the same thing for online meetings. Try to make sure your technology is working beforehand and that you're watching the clock so you don't miss a meeting accidentally.
+
+Staying focused and attentive during a meeting is another great way to respect your team members' time. You don't want to miss something important because you were distracted by something else during a presentation. Paying attention also means asking questions when you need clarification, or if you think there may be a problem with a project plan. Don't be afraid to reach out after a meeting. If you didn't get to ask your question, follow up with the group afterwards and get your answer. When you're the person leading the meeting, make sure you build and send out an agenda beforehand, so your team members can come prepared and leave with clear takeaways.
+
+You'll also want to keep everyone involved. Try to engage with all your attendees so you don't miss out on any insights from your team members. Let everyone know that you're open to questions after the meeting too. It's a great idea to take notes even when you're leading the meeting. This makes it easier to remember all questions that were asked. Then afterwards you can follow up with individual team members to answer those questions or send an update to your whole team depending on who needs that information. 
+
+## Lead great meetings
+## Before the meeting
+If you are organizing the meeting, you will probably talk about the data. Before the meeting: 
+
+- Identify your objective. Establish the purpose, goals, and desired outcomes of the meeting, including any questions or requests that need to be addressed.
+- Acknowledge participants and keep them involved with different points of view and experiences with the data, the project, or the business.
+- Organize the data to be presented. You might need to turn raw data into accessible formats or create data visualizations. 
+- Prepare and distribute an agenda.
+
+### Crafting a compelling agenda
+A solid meeting agenda sets your meeting up for success. Here are the basic parts your agenda should include: 
+- Meeting start and end time
+- Meeting location (including information to participate remotely, if that option is available)
+- Objectives 
+- Background material or data the participants should review beforehand
+
+### Sharing your agenda ahead of time
+After writing your agenda, it's time to share it with the invitees. Sharing the agenda with everyone ahead of time helps them understand the meeting goals and prepare questions, comments, or feedback. You can email the agenda or share it using another collaboration tool.
+
+## During the meeting
+As the leader of the meeting, it's your job to guide the data discussion. With everyone well informed of the meeting plan and goals, you can follow these steps to avoid any distractions:
+
+- Make introductions (if necessary) and review key messages
+- Present the data 
+- Discuss observations, interpretations, and implications of the data
+- Take notes during the meeting
+- Determine and summarize next steps for the group 
+
+## After the meeting
+To keep the project and everyone aligned, prepare and distribute a brief recap of the meeting with next steps that were agreed upon in the meeting. You can even take it a step further by asking for feedback from the team.
+
+- Distribute any notes or data 
+- Confirm next steps and timeline for additional actions
+- Ask for feedback (this is an effective way to figure out if you missed anything in your recap)
+
+## Terms and definitions for Course 2, Module 4
+- Cloud: A place to keep data online, rather than a computer hard drive
+- Reframing: Restating a problem or challenge, then redirecting it toward a potential resolution
+- Turnover rate: The rate at which employees voluntarily leave a company
+
+
+
 Free data sources: 
 - World Bank 
 - World Health Organization
