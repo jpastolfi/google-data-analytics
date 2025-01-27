@@ -252,3 +252,128 @@ Wide data: A dataset in which every data subject has a single row with multiple 
 
 
 # Module 2 - Unbiased and objective data
+## Unbiased and objective data
+Bias: a preference in favor of or against a person, group of people, or thing. It can be conscious or subconscious. The good news is once we know and accept that we have bias, we can start to recognize our own patterns of thinking and learn how to manage it
+
+Data bias: a type of error that systematically skews results in a certain direction.
+
+- Sampling bias: when a sample isn't representative of the population as a whole. You can avoid this by making sure the sample is chosen at random, so that all parts of the population have an equal chance of being included. Unbiased sampling results in a sample that's representative of the population being measured. Another great way to discover if you're working with unbiased data is to bring the results to life with visualizations.
+
+- Observer bias: sometimes referred to as experimenter bias or research bias. Basically, it's the tendency for different people to observe things differently. One time observer bias might happen is during manual blood pressure readings. Because the pressure meter is so sensitive, health care workers often get pretty different results. Usually, they'll just round up to the nearest whole number to compensate for the margin of error. But if doctors consistently round up, or down the blood pressure readings on their patients, health conditions may be missed, and any studies involving their patients wouldn't have precise, and accurate data.
+
+- Interpretation bias: the tendency to always interpret ambiguous situations in a positive, or negative way. Let's say you're having lunch with a colleague, when you get a voicemail from your boss, asking you to call her back. You put the phone down in a huff, certain that she's angry, and you're on the hot seat for something. But when you play the message for your friend, he doesn't hear anger at all, he actually thinks she sounds calm and straightforward. Interpretation bias, can lead to two people seeing or hearing the exact same thing, and interpreting it in a variety of different ways, because they have different backgrounds, and experiences. Your history with your boss made you interpret the call one way, while your friend interpreted it in another way, because they're strangers. Add these interpretations to a data analysis, and you can get bias results.
+
+- Confirmation bias: the tendency to search for, or interpret information in a way that confirms preexisting beliefs. Someone might be so eager to confirm a gut feeling, that they only notice things that support it, ignoring all other signals. This happens all the time in everyday life. We might get our news from a certain website because the writers share our beliefs, or we socialize with people because we know that they hold similar views.
+
+## Achieve data credibility
+- ROCCC: Process to identify good data sources.
+
+| Criteria | Definition |
+|----------|------------|
+| Reliable | Accurate, complete and unbiased information that's been vetted and proven fit for use. |
+| Original | To make sure you're dealing with good data, be sure to validate it with the original source. |
+| Comprehensive | The best data sources contain all critical information needed to answer the question or find the solution. |
+| Current | The usefulness of data decreases as time passes. The best data sources are current and relevant to the task at hand. |
+| Cited | Citing makes the information you're providing more credible. When you're choosing a data source, think about three things. Who created the data set? Is it part of a credible organization? When was the data last refreshed?|
+
+ If you have original data from a reliable organization and it's comprehensive, current, and cited, it ROCCCs! There's lots of places that are known for having good data. Your best bet is to go with the vetted public data sets, academic papers, financial data, and governmental agency data.
+
+## Data ethics and privacy
+
+We all have our own personal biases, not to mention subconscious biases that make ethics even more difficult to navigate. That's why we have data ethics.
+
+Ethics refers to well-founded standards of right and wrong that prescribe what humans ought to do, usually in terms of rights, obligations, benefits to society, fairness or specific virtues.
+
+Data ethics refers to well-founded standards of right and wrong that dictate how data is collected, shared, and used. Data ethics tries to get to the root of the accountability companies have in protecting and responsibly using the data they collect. Here are some of the different aspects of data ethics:
+- Ownership: who owns the data? It isn't the organization that invested time and money collecting, storing, processing, and analyzing it. It's individuals who own the raw data they provide, and they have primary control over its usage, how it's processed and how it's shared.
+- Transaction transparency: all data processing activities and algorithms should be completely explainable and understood by the individual who provides their data. 
+- Consent: an individual's right to know explicit details about how and why their data will be used before agreeing to provide it. They should know answers to questions like why is the data being collected? How will it be used? How long will it be stored?
+- Currency: individuals should be aware of financial transactions resulting from the use of their personal data and the scale of these transactions. If your data is helping to fund a company's efforts, you should know what those efforts are all about and be given the opportunity to opt out.
+- Privacy: preserving a data subject's information and activity any time a data transaction occurs. This is sometimes called information privacy or data protection. It's all about access, use, and collection of data. It also covers a person's legal right to their data
+- Openness: free access, usage, and sharing of data. 
+
+### Data anonymization
+Personally identifiable information, or PII, is information that can be used by itself or with other data to track down a person's identity. 
+
+Data anonymization is the process of protecting people's private or sensitive data by eliminating that kind of information. Typically, data anonymization involves blanking, hashing, or masking personal information, often by using fixed-length codes to represent data columns, or hiding data with altered values. 
+
+#### What types of data should be anonymized?
+Healthcare and financial data are two of the most sensitive types of data. These industries rely a lot on data anonymization techniques. After all, the stakes are very high. That’s why data in these two industries usually goes through de-identification, which is a process used to wipe data clean of all personally identifying information.
+
+Data anonymization is used in just about every industry. That is why it is so important for data analysts to understand the basics. Here is a list of data that is often anonymized:
+
+- Telephone numbers
+- Names
+- License plates and license numbers
+- Social security numbers
+- IP addresses
+- Medical records
+- Email addresses
+- Photographs
+- Account numbers
+
+For some people, it just makes sense that this type of data should be anonymized. For others, we have to be very specific about what needs to be anonymized. Imagine a world where we all had access to each other’s addresses, account numbers, and other identifiable information. That would invade a lot of people’s privacy and make the world less safe. 
+
+
+## Undestand open data
+### Openness
+When referring to data, openness refers to free access, usage and sharing of data.
+
+- Be available and accessible to the public as a complete dataset: Open data must be available as a whole, preferably by downloading over the Internet in a convenient and modifiable form.
+- Be provided under terms that allow it to be reused and redistributed: Open data must be provided under terms that allow reuse and redistribution including the ability to use it with other datasets.
+- Allow universal participation so that anyone can use, reuse, and redistribute the data: Everyone must be able to use, reuse, and redistribute the data. There shouldn't be any discrimination against fields, persons, or groups. No one can place restrictions on the data like making it only available for use in a specific industry. 
+
+One of the biggest benefits of open data is that credible databases can be used more widely. More importantly, all of that good data can be leveraged, shared, and combined with other data. 
+
+A whole lot of resources are needed to make the technological shift to open data. Interoperability is key to open data's success. Interoperability is the ability of data systems and services to openly connect and share data. For example, data interoperability is important for health care information systems where multiple organizations such as hospitals, clinics, pharmacies, and laboratories need to access and share data to ensure patients get the care that they need. This is why your doctor is able to send your prescription directly to your pharmacy to fill. They have compatible databases that allow them to share information. But this kind of interoperability requires a lot of cooperation.
+
+## Terms and definitions for Course 3, Module 2
+Bad data source: A data source that is not reliable, original, comprehensive, current, and cited (ROCCC) 
+
+Bias: A conscious or subconscious preference in favor of or against a person, group of people, or thing
+
+Confirmation bias: The tendency to search for or interpret information in a way that confirms pre-existing beliefs
+
+Consent: The aspect of data ethics that presumes an individual’s right to know how and why their personal data will be used before agreeing to provide it
+
+Cookie: A small file stored on a computer that contains information about its users
+
+Currency: The aspect of data ethics that presumes individuals should be aware of financial transactions resulting from the use of their personal data and the scale of those transactions
+
+Data anonymization: The process of protecting people's private or sensitive data by eliminating identifying information
+
+Data bias: When a preference in favor of or against a person, group of people, or thing systematically skews data analysis results in a certain direction
+
+Data ethics: Well-founded standards of right and wrong that dictate how data is collected, shared, and used
+
+Data interoperability: A key factor leading to the successful use of open data among companies and governments
+
+Data privacy: Preserving a data subject’s information any time a data transaction occurs
+
+Ethics: Well-founded standards of right and wrong that prescribe what humans ought to do, usually in terms of rights, obligations, benefits to society, fairness, or specific virtues
+
+Experimenter bias: The tendency for different people to observe things differently (also called observer bias)
+
+Fairness: A quality of data analysis that does not create or reinforce bias 
+
+First-party data: Data collected by an individual or group using their own resources
+
+General Data Protection Regulation of the European Union (GDPR): Policy-making body in the European Union created to help protect people and their data
+
+Good data source: A data source that is reliable, original, comprehensive, current, and cited (ROCCC) 
+
+Interpretation bias: The tendency to interpret ambiguous situations in a positive or negative way
+
+Observer bias: The tendency for different people to observe things differently (also called experimenter bias)
+
+Open data: Data that is available to the public
+
+Openness: The aspect of data ethics that promotes the free access, usage, and sharing of data
+
+Sampling bias: Overrepresenting or underrepresenting certain members of a population as a result of working with a sample that is not representative of the population as a whole
+
+Transaction transparency: The aspect of data ethics that presumes all data-processing activities and algorithms should be explainable and understood by the individual who provides the data
+
+Unbiased sampling: When the sample of the population being measured is representative of the population as a whole
+
+# Module 3 - All about databases
