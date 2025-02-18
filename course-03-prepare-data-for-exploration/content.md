@@ -1,5 +1,5 @@
 # Course 03 - Prepare Data For Exploration
-# Module 1
+# Module 1 - Data types and structures
 ## Data exploration
 ### Data collection considerations
 - How the data will be colected
@@ -251,7 +251,7 @@ Wide data: A dataset in which every data subject has a single row with multiple 
 
 
 
-# Module 2 - Unbiased and objective data
+# Module 2 - Data responsibility
 ## Unbiased and objective data
 Bias: a preference in favor of or against a person, group of people, or thing. It can be conscious or subconscious. The good news is once we know and accept that we have bias, we can start to recognize our own patterns of thinking and learn how to manage it
 
@@ -377,3 +377,216 @@ Transaction transparency: The aspect of data ethics that presumes all data-proce
 Unbiased sampling: When the sample of the population being measured is representative of the population as a whole
 
 # Module 3 - All about databases
+## Work with databases
+Meta: something referencing back to itself or being completely aware of itself, like a character in a book that know's he's in a book.
+Metadata: data about data. Think of it like a reference guide. Without the guide all you have is a bunch of data with no context explaining what it means. Metadata tells you where the data comes from, when and how it was created, and what it's all about.
+
+Relational database: a database that contains a series of related tables that can be connected via their relationships. For two tables to have a relationship, one or more of the same fields must exist inside both tables. Basically, they allow data analysts to organize and link data based on what the data has in common.  
+
+In a non-relational table, you will find all of the possible variables you might be interested in analyzing all grouped together. This can make it really hard to sort through. This is one reason why relational databases are so common in data analysis: they simplify a lot of analysis processes and make data easier to find and use across an entire database. 
+
+Normalization: a process of organizing data in a relational database. For example, creating tables and establishing relationships between those tables. It is applied to eliminate data redundancy, increase data integrity, and reduce complexity in a database.
+
+Primary key: an identifier that references a column in which each value is unique. You can think of it as a unique identifier for each row in a table. It should be unique, meaning no two rows can have the same primary key. Also, it cannot be null or blank. A primary key may also be constructed using multiple columns of a table. This type of primary key is called a composite key.
+
+Foreign key: a field within a table that's a primary key in another table. In other words, a foreign key is how one table can be connected to another.
+
+## Manage data with Metadata
+### Metadata
+Metadata is information that's used to describe the data that's contained in something, like a photo or an email. Keep in mind that metadata is not the data itself. Instead, it's data about the data. In data analytics, metadata helps data analysts interpret the contents of the data within a database. There are three common types of metadata:
+- Descriptive: metadata that describes a piece of data and can be used to identify it at a later point in time. For instance, the descriptive metadata of a book in a library would include the code you see on its spine, known as a unique International Standard Book Number, also called the ISBN. It would also include the book's author and title. Descriptive metadata provides information that helps identify and describe the contents of data, like column and table names, data types.
+- Structural: metadata that indicates how a piece of data is organized and whether it's part of one or more than one data collection. An example of structural data would be how the pages of a book are put together to create different chapters. It's important to note that structural metadata also keeps track of the relationship between two things. For example, it can show us that the digital document of a book manuscript was actually the original version of a now printed book. Structural metadata defines how data is organized and interrelated within the database, like relationships between tables (FOREIGN KEY constraints) and schema definitions.
+- Administrative: metadata that indicates the technical source of a digital asset. When looking at the metadata inside the photo, that is administrative metadata. It shows you the type of file it was, the date and time it was taken, and much more. Administrative metadata includes information about database management and operations, like access permitions, backup schedules and procedures, performance statistics and security protocols, such as encryption details (SSL enabled for database connections).
+
+Here's one final thought to help you understand metadata. If you're on your way to the library to pick out a book, you could research a book's title, author, length, and number of chapters. That's all metadata, and it can tell you a lot about the book, but you have to actually read the book to know what it's all about. 
+
+Regardless of whether you’re working with a large or small quantity of data, metadata is the mark of a knowledgeable analytics team. Metadata helps people communicate about data across the business and makes it easier to reuse data. In essence, metadata tells the who, what, when, where, which, why, and how of data.
+
+### Elements of metadata
+Before examining metadata examples, it’s important to understand what type of information metadata typically provides:
+
+- File or document type: What type of file or document are you examining?
+- Date, time, and creator: When was it created? Who created it? When was it last modified?
+- Title and description: What is the name of the item you are examining? What type of content does it contain?
+- Geolocation: If you’re examining a photo, where was it taken?
+- Tags and categories: What is the general overview of the item that you have? Is it indexed or described in a specific way? 
+- Who last modified it and when: Were any changes made to the file? If yes, when were the most recent modifications made?
+- Who can access or update it: If you’re examining a dataset, is it public? Are special permissions needed to customize or modify it?
+
+Examples:
+- Whenever a photo is captured with a camera, metadata such as filename, date, time, geolocation, and the type of device on which it was taken are gathered and saved with it. 
+- When an email is sent or received, it contains metadata such as subject line, sender, recipient, date sent, and time sent. Emails also contain hidden metadata that includes server names, IP addresses, HTML format, and software details. 
+- Spreadsheets and documents are already filled with a considerable amount of data, so it’s no surprise that they also include metadata such as title, author, creation date, number of pages, and user comments. Additionally, spreadsheet metadata includes tab names, tables, and columns. 
+- Every web page has a number of standard metadata fields such as tags and categories, the site creator’s name, web page title and description, and time of creation. Results of search engine queries that you might make on a daily basis are metadata.
+- Non-digital items can have metadata, too. Every book has standard metadata that will inform you of its title, author’s name, a table of contents, publisher information, copyright description, index, and a brief description of the book’s contents. Audiobook metadata also includes this data, as well as metadata specific to the audiobook such as narrator and recording length.
+
+### Metadata repositories
+Metadata repositories help data analysts ensure their data is reliable and consistent.
+
+Metadata repositories are specialized databases specifically created to store and manage metadata. They can be kept in a physical location or a virtual environment.
+
+Metadata repositories describe where the metadata came from and store that data in an accessible form with a common structure. This provides data analysts with quick and easy access to the data. If data analysts didn’t use a metadata repository, they would have to select each file to look up its information and compare the data manually, which would waste a lot of time and effort.
+
+### Metadata of external databases
+Data analysts use both second-party and third-party data to gain valuable insights and make strategic, data-driven decisions. Second-party data is data that’s collected by a group directly from the group’s audience and then sold. Third-party data is provided by outside sources that didn’t collect it directly. The providers of this data are not its original collectors and do not have a direct relationship with any individuals to whom the data belongs. The outside providers get the data from websites or other programs that pull it from the various platforms where it was originally generated. 
+
+Data analysts should understand the metadata of external databases to confirm that it is consistent and reliable. In some cases, they should also contact the owner of the third-party data to confirm that it is accessible and available for purchase. Confirming that the data is reliable and that the proper permissions to use it have been obtained are best practices when using data that comes from another organization.
+
+Let's say a company starts out with a traditional data storage system in its offices. But then, as the amount of data it owns continues to expand, cloud storage is needed too. Plus, this company could also be accessing and using second or third party data from a partner organization. Each of these systems has its own rules and requirements, so each organizes the data in a completely different way.
+
+On the other hand, metadata is stored in a single, central location and it gives the company standardized information about all of its data. This is done in two ways. First, metadata includes information about where each system is located and where the data sets are located within those systems. Second, the metadata describes how all of the data is connected between the various systems. Another important aspect of metadata is something called data governance.
+
+Data governance is a process to ensure the formal management of a company’s data assets. This gives an organization better control of their data and helps a company manage issues related to data security and privacy, integrity, usability, and internal and external data flows. It's important to note that data governance is about more than just standardizing terminology and procedures. It's about the roles and responsibilities of the people who work with the metadata every day. These are metadata specialists, and they organize and maintain company data, ensuring that it's of the highest possible quality. These people create basic metadata identification and discovery information, describe the way different data sets work together, and explain the many different types of data resources. Metadata specialists also create very important standards that everyone follows and the models used to organize the data. 
+
+## Access different data sources
+### Import data dynamically
+
+IMPORT functions in Google Sheets
+
+- The IMPORTRANGE function
+In Google Sheets, the IMPORTRANGE function can import all or part of a dataset from another Google Sheet. To use this function, you need two pieces of information: 
+
+1. The URL of the Google Sheet from which you’ll import data.
+1. The name of the sheet and the range of cells you want to import into your Google Sheet.
+
+Once you have this information, open the Google Sheet into which you want to import data and select the cell into which the first cell of data should be copied. Enter = to indicate you will enter a function, then complete the IMPORTRANGE function with the URL and range you identified in the following manner: =IMPORTRANGE("URL", "sheet_name!cell_range"). Note that an exclamation point separates the sheet name and the cell range in the second part of this function. 
+
+An example of this function is: 
+
+=IMPORTRANGE("https://docs.google.com/thisisatestabc123", "sheet1!A1:F13")
+
+- The IMPORTHTML function
+Importing HTML tables is a basic method to extract data from public web pages. This process is often called “scraping.”
+
+In Google Sheets, you can use the IMPORTHTML function to import the data from an HTML table (or list) on a web page. This function is similar to the IMPORTRANGE function.
+
+- The IMPORTDATA function
+Sometimes data displayed on the web is in the form of a comma- or tab-delimited file. You can use the IMPORTDATA function in a Google Sheet to import data into a Google Sheet. This function is similar to the IMPORTRANGE function. 
+
+## Sort and filter data
+### Sorting
+Sorting involves arranging data into a meaningful order to make it easier to understand, analyze, and visualize. Data can be sorted in ascending or descending order, and alphabetically or numerically. Sorting can be done across all of a spreadsheet or just in a single column or table. You can also sort by multiple variables. For instance, if our data set contains both city and state fields, we can sort first by city and then by state.
+
+### Filtering
+Filtering means showing only the data that meets a specific criteria while hiding the rest. A filter simplifies a spreadsheet by only showing us the information we need.
+
+## Large datasets in SQL
+### SQL best practices
+- Capitalization and case sensitivity
+With SQL, capitalization usually doesn’t matter. But if you use capitalization as part of a consistent style your queries will  look more professional.
+
+It is always a good idea to use all caps for clause starters and functions (e.g. SELECT, FROM, WHERE, SUM()). Column names should be all lowercase. Table names should be in CamelCase. This helps keep your queries consistent and easier to read while not impacting the data that will be pulled when you run them. The only time that capitalization does matter is when it is inside quotes.
+
+Vendors of SQL databases may use slightly different variations of SQL. These variations are called SQL dialects. Some SQL dialects are case sensitive. BigQuery is one of them. Vertica is another. But most, like MySQL, PostgreSQL, and SQL Server, aren’t case sensitive. This means if you searched for country_code = ‘us’, it will return all entries that have 'us', 'uS', 'Us', and 'US'. This isn’t the case with BigQuery. BigQuery is case sensitive, so that same search would only return entries where the country_code is exactly 'us'. If the country_code is 'US', BigQuery wouldn’t return those entries as part of your result.
+
+- Single or double quotes: '' or " "
+For the most part, it also doesn’t matter if you use single quotes ' ' or double quotes " " when referring to strings. But there are two situations where it does matter what kind of quotes you use:
+
+  - When you want strings to be identifiable in any SQL dialect: Within each SQL dialect there are rules for what is accepted and what isn’t. But a general rule across almost all SQL dialects is to use single quotes for strings.
+
+  - When your string contains an apostrophe or quotation marks: The second situation is when your string has quotes inside it. SQL understands text strings as either starting with a single quote ' or double quote ". If a string starts with double quotes, SQL will expect another double quote to signal the end of the string.
+
+- Comments as reminders
+As you get more comfortable with SQL, you will be able to read and understand queries at a glance. But it never hurts to have comments in the query to remind yourself of what you are trying to do. And if you share your query, it also helps others understand it. 
+
+Comments can be started using --. You can use # in place of the two dashes, --, but keep in mind that # isn’t recognized in all SQL dialects (MySQL doesn’t recognize #). So it is best to use -- and be consistent with it. When you add a comment to a query using --, the database query engine will ignore everything in the same line after --. It will continue to process the query starting on the next line.
+
+- snake_case names for columns 
+It is important to always make sure that the output of your query has easy-to-understand names. If you create a new column (say from a calculation or from concatenating new fields), the new column will receive a generic default name (e.g. f0).
+
+- CamelCase names for tables
+You can also use CamelCase capitalization when naming your table. CamelCase capitalization means that you capitalize the start of each word. So the table TicketsByOccasion uses CamelCase capitalization. Please note that the capitalization of the first word in CamelCase is optional; camelCase is also used. 
+
+The second option, snake_case, is technically okay. With words separated by underscores, your table name is easy to read, but it can get very long because you are adding the underscores. It also takes more time to enter. If you use this table a lot, it can become a chore.
+
+In summary, it is up to you to use snake_case or CamelCase when creating table names. Just make sure your table name is easy to read and consistent. Also be sure to find out if your company has a preferred way of naming their tables. If they do, always go with their naming convention for consistency.
+
+- Indentation
+As a general rule, you want to keep the length of each line in a query <= 100 characters. This makes your queries easy to read. 
+
+```sql
+SELECT 
+    CASE
+        WHEN genre = 'horror' THEN 'Will not watch' 
+        WHEN genre = 'documentary' THEN 'Will watch alone' 
+        ELSE 'Watch with others' 
+        END AS watch_category, COUNT(movie_title) AS number_of_movies
+FROM
+    MovieTheater
+GROUP BY
+    1
+```
+- Multi-line comments
+If you make comments that take up multiple lines, you can use -- for each line. Or, if you have more than two lines of comments, it might be cleaner and easier is to use /* to start the comment and */ to close the comment.
+
+## Terms and definitions for Course 3, Module 3
+Administrative metadata: Metadata that indicates the technical source of a digital asset
+
+CSV (comma-separated values) file: A delimited text file that uses a comma to separate values
+
+Data governance: A process for ensuring the formal management of a company’s data assets
+
+Descriptive metadata: Metadata that describes a piece of data and can be used to identify it at a later point in time
+
+Foreign key: A field within a database table that is a primary key in another table (Refer to primary key)
+
+FROM: The section of a query that indicates where the selected data comes from
+
+Geolocation: The geographical location of a person or device by means of digital information
+
+Metadata: Data about data
+
+Metadata repository: A database created to store metadata
+
+Naming conventions: Consistent guidelines that describe the content, creation date, and version of a file in its name
+
+Normalized database: A database in which only related data is stored in each table
+
+Notebook: An interactive, editable programming environment for creating data reports and showcasing data skills
+
+Primary key: An identifier in a database that references a column in which each value is unique (Refer to foreign key)
+
+Redundancy: When the same piece of data is stored in two or more places
+
+Schema: A way of describing how something, such as data, is organized
+
+SELECT: The section of a query that indicates the subset of a dataset
+
+Structural metadata: Metadata that indicates how a piece of data is organized and whether it is part of one or more than one data collection
+
+WHERE: The section of a query that specifies criteria that the requested data must meet
+
+World Health Organization: An organization whose primary role is to direct and coordinate international health within the United Nations system
+
+# Module 4 - Organize and protect data
+### Best practices when organizing data
+- Naming conventions
+Consistent guidelines that describe the content, date, or version of a file in its name. Basically, this means you want to use logical and descriptive names for your files to make them easier to find and use. File names should include:
+  - The project’s name. Giving a file a meaningful name to describe its contents makes searching for it straightforward. It also makes it easy to understand the type of data the file contains.
+  - The file creation date. Knowing when a file was created can help you understand if it is relevant to your current analysis. For example, you might want to analyze only data from 2023. 
+  - Revision version. Including a revision version helps ensure you’re working with the correct file. You wouldn’t want to make edits to an old version of a file without realizing it! When you include revision numbers in a file name, lead with a zero. This way, if your team reaches more than nine rounds of revisions, double digits are already built into your convention. 
+  - Consistent style and order. Make sure the information you include in a file name follows a consistent order. For example, you wouldn’t want version three of the sales report in the example to be titled 20231125_v03_SalesReport. It would be difficult to find and compare multiple documents.
+
+Example: SalesReport_20231125_v02. Just from looking at the name of the file we know it is a sales report from 25/11/2023, second version.
+
+- Foldering
+Organizing your files into folders helps keep project-related files together in one place. For example, all the files related to your vacation plan might go in the Vacation2025 folder. You might then break that folder down even further by creating subfolders like itinerary or photos, depending on what else you'd like to easily access.
+
+To keep your files organized, create folders and subfolders—in a logical hierarchy—to ensure related files are stored together and can be found easily later. A hierarchy is a way of organizing files and folders. Broader-topic folders are located at the top of the hierarchy, and more specific subfolders and files are contained within those folders. Each folder can contain other folders and files. This allows you to group related files together and makes it easier to find the files you need. In addition, it’s a best practice to store completed files separately from in-progress files so the files you need are easy to find. Archive older files in a separate folder or in an external storage location. 
+
+- Archiving older files
+Move old projects to a separate location to create an archive and cut down on clutter
+
+### Secure data 
+<strong>Data</strong> security means protecting data from unauthorized access or corruption by putting safety measures in place. Usually the purpose of data security is to keep unauthorized users from accessing or viewing sensitive data
+
+<strong>Encryption</strong> uses a unique algorithm to alter data and make it unusable by users and applications that don’t know the algorithm. This algorithm is saved as a “key” which can be used to reverse the encryption; so if you have the key, you can still use the data in its original form.  
+
+<strong>Tokenization</strong> replaces the data elements you want to protect with randomly generated data referred to as a “token.” The original data is stored in a separate location and mapped to the tokens. To access the complete original data, the user or application needs to have permission to use the tokenized data and the token mapping. This means that even if the tokenized data is hacked, the original data is still safe and secure in a separate location. 
+
+## Terms and definitions for Course 3, Module 4
+Access control: Features such as password protection, user permissions, and encryption that are used to protect a spreadsheet 
+
+Data security: Protecting data from unauthorized access or corruption by adopting safety measures
+
+Inbox: Electronic storage where emails received by an individual are held
